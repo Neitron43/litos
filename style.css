@@ -268,7 +268,7 @@ body {
     align-items: center;
 }
 
-/* Он ебанулся */ .swiper-slide-info-card:not(:last-child) {
+.swiper-slide-info-card:not(:last-child) {
     margin-right: 30px;
 }
  
@@ -284,7 +284,7 @@ body {
     background: var(--accent);
     border-radius: 10000px;
 }
-/*Я использую православный CDN (я гей)*/
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
     display: none;
@@ -534,4 +534,139 @@ body {
     .popular-products-cards {
         zoom: 1.0;
     }
+}
+
+/*Page 2*/
+
+.catalog-upper {
+    margin-top: 60px;
+    width: 100%;
+}
+
+.catalog-upper-text {
+    margin-bottom: 40px;
+}
+
+.catalog-mid {
+    margin-bottom: 160px;
+}
+
+.catalog-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.catalog-filter-category {
+     display: flex;
+     flex-direction: column;
+}
+
+.catalog-filter-category h3 {
+    font-weight: 500; 
+    margin-bottom: 20px;
+}
+
+.catalog-filter-category .check {
+    max-width: 205px;
+    margin-bottom: 10px;
+}
+
+.catalog-filter-category .check__box {
+    margin-top: 7px;
+    border-radius: 5px;
+}
+
+/*Catalog checkbox styles*/
+
+    .check {
+        padding-left: 35px;
+    }
+
+    .check p{
+        font-size: var(--pr-min);
+        color: var(--accent);
+    }
+
+    .check__input {
+        position: absolute;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+
+    .check__box {
+        margin-left: -35px;
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        border: 1px solid #D8D8D8;
+        box-sizing: border-box;
+    }
+
+    /* Checked */
+
+    .check__input:checked + .check__box {
+        background: no-repeat url(./img/checkbox-checked.svg) center;
+        background-color: var(--accent);
+        border-radius: 5px;
+    }
+/*-------------------------*/
+
+.catalog-filter-price {
+    margin-top: 20px;
+}
+
+.catalog-filter-price h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.catalog-filter-price-inputs {
+    display: flex;
+    align-items: center;
+}
+
+.catalog-filter-price-inputs input {
+    max-width: 70px;
+}
+
+input#second {
+    margin-left: 20px;
+}
+
+.catalog-filter-colours {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.catalog-filter-colours h3 {
+   font-weight: 500; 
+   margin-bottom: 20px;
+}
+
+.catalog-filter-colours .check {
+   max-width: 205px;
+   margin-bottom: 10px;
+}
+
+.catalog-filter-colours .check__box {
+    border-radius: 1px;
+}
+
+.catalog-filter button {
+    font-size: var(--pr-min);
+    margin-top: 30px;
+    color: #F3F3F3;
+    background: var(--accent);
+    border-radius: var(--border-rad);
+    width: 178px;
+    height: 50px;
+}
+
+.catalog-cards {
+    display: grid;
+    grid-template-columns: 283px 283px 283px;
+    
 }
