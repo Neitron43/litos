@@ -7,25 +7,35 @@
     <title>Литос</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-    <!---->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">    
 </head>
 <body>
     <header>
         <div class="header-up">
             <div class="wrapper">
                 <div class="header-upper">
-                    <div class="header-upper-nav">
-                        <ul>
-                            <li>О нас</li>
-                            <li>Акции</li>
-                            <li>Оплата</li>
-                            <li>Доставка</li>
-                            <li>Гарантии и возврат</li>
-                        </ul>
+                    <div class="header-burger">
+                        <span></span>
                     </div>
-                    <div class="header-upper-contact">
-                        <p>example@mail.ru</p>
-                        <p>+7 (999) 999-99-99</p>
+                    <div class="header-middle-logo-mobile"><img src="./img/litos-logo-mobile.svg"></div>
+                    <div class="header-middle-search-form-mobile"><img src="./img/search-mobile.png"></div>
+                    <div class="header-upper-menu">
+                        <h3 class="header-upper-mobile-head _first">Меню</h3>
+                        <div class="header-upper-nav">
+                            <ul>
+                                <li>О нас</li>
+                                <li>Акции</li>
+                                <li>Оплата</li>
+                                <li>Доставка</li>
+                                <li>Гарантии и возврат</li>
+                            </ul>
+                        </div>
+                        <h3 class="header-upper-mobile-head _second">Контакты</h3>
+                        <div class="header-upper-contact">
+                            <p>example@mail.ru</p>
+                            <p>+7 (999) 999-99-99</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -49,6 +59,7 @@
             <div class="wrapper">
                 <div class="header-bottom">
                     <button class="header-bottom-button"><img src="./img/header-catalog.svg"></button>
+                    <button class="header-bottom-button-mobile"><img src="./img/catalog-mobile.svg"></button>
                     <div class="header-bottom-popular">
                         <ul>
                             <li><a target="_blank" href="https://youtu.be/FiHeDhisao8?t=13">Популярная категория</a></li>
@@ -60,9 +71,38 @@
             </div>
         </div>
     </header>
+    <section class="cards-mobile"> 
+        <div class="cards-mobile-card">
+            <div class="cards-mobile-card-info">
+                <h3>Декоративный камень
+                    по низким ценам</h3>
+                <p>Покупайте декоративный камень в Кирове по низким ценам только у нас!</p>
+                <button><img src="./img/watch-catalog.svg"></button>
+            </div>
+            <img class="cards-mobile-card-img" src="./img/brick-mobile.png">
+        </div>
+        <div class="cards-mobile-card">
+            <div class="cards-mobile-card-info">
+                <h3>Декоративный камень
+                    по низким ценам</h3>
+                <p>Покупайте декоративный камень в Кирове по низким ценам только у нас!</p>
+                <button><img src="./img/watch-catalog.svg"></button>
+            </div>
+            <img class="cards-mobile-card-img" src="./img/brick-mobile.png">
+        </div>
+        <div class="cards-mobile-card">
+            <div class="cards-mobile-card-info">
+                <h3>Декоративный камень
+                    по низким ценам</h3>
+                <p>Покупайте декоративный камень в Кирове по низким ценам только у нас!</p>
+                <button><img src="./img/watch-catalog.svg"></button>
+            </div>
+            <img class="cards-mobile-card-img" src="./img/brick-mobile.png">
+        </div>
+    </section>
     <section class="slider">
         <div class="wrapper">
-            <div class="swiper-container">
+            <div class="swiper-container _active">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="./img/slider-brick.png">
@@ -123,8 +163,8 @@
                 </div>
             </div>
             
-            <div class="swiper-button-prev"><img src="./img/arrow-backward.svg"></div>
-            <div class="swiper-button-next"><img src="./img/arrow-forward.svg"></div>
+            <button class="swiper-button-prev"><img src="./img/arrow-backward.svg"></button>
+            <button class="swiper-button-next"><img src="./img/arrow-forward.svg"></button>
         
         </div>
     </section>
@@ -314,7 +354,12 @@
             <a href="#"><p class="footer-confidential pr-large">Политика конфиденциальности</p></a>
         </div>
     </footer>
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.slim.js"
+    integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY="
+    crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/burger.js"></script>
 </body>
 </html>
