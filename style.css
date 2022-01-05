@@ -372,17 +372,18 @@ body {
 }
 
 .categories-main-card h3 {
-    margin-top: 6px;
     font-size: var(--pr-large);
     font-weight: 600;
     max-width: 250px;
+    padding-top: 10px;
 }
 
 .categories-main-card p {
     margin-top: 10px;
-    font-size: var(--pr-mid);
+    font-size: var(--pr-min);
     color: var(--pr-color);
     max-width: 250px;
+    margin-bottom: 20px;
 }
 
 .sale-picture {
@@ -686,7 +687,9 @@ input#second {
     .header-middle-search-form-mobile,
     .cards-mobile,
     .header-middle-logo-mobile,
-    .header-upper-mobile-head {
+    .header-upper-mobile-head,
+    .header-bottom-button-mobile,
+    .categories-main-card-img-2 {
         display: none;
     }
 }
@@ -892,6 +895,9 @@ input#second {
         flex-direction: column;
         width: 100%;
     }
+    .advantages{
+        padding-top: 50px;
+    }
     .advantages-cards{
         flex-wrap: wrap;
     }
@@ -902,21 +908,46 @@ input#second {
     }
     .advantages-card img{
         margin-bottom: 20px;
+        margin-right: 0;
     }
     .categories-main-header {
-        flex-wrap: wrap;
+        flex-wrap: wrap; 
+    }
+    .categories-main-header h1{
+        font-size: 32px;
+        padding-bottom: 10px;
+    }
+    .categories-main-card-img-1{
+        display: none;
     }
     .popular-products-header{
         flex-wrap: wrap;
     }
+    .popular-products-header h1{
+        font-size: 32px;
+        padding-bottom: 10px;
+    }
     .about-info {
         flex-wrap: wrap;
+    }
+    .about-info-text{
+        margin-bottom: 25px;
     }
     .about-info img{
         width: 100%;
     }
     .footer-info {
         flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-info ul {
+        margin-top: 30px;
+    }
+    footer{
+        padding-bottom: 100px;
     }
 }
 @media (max-width:970px) {
