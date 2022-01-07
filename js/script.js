@@ -1,16 +1,15 @@
-if ($(window).width() < 1024) {
-    $('.swiper-container').removeClass('_active');
-    slider();
+const clientWidth = document.documentElement.clientWidth;
+const swiperSlider = document.querySelector('.swiper-container');
+
+if (clientWidth < 1024) {
+    swiperSlider.classList.remove('_active');
 } else {
-    $('.swiper-container').addClass('_active');
-    slider();
-}   
-   function slider(){
-       new Swiper('._active',{
+    swiperSlider.classList.add('_active');
+    new Swiper('._active',{
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
-        },
-        loop: true,
+       },
+           loop: true,
     });
-   }
+}   

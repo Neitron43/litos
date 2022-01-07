@@ -4,3 +4,6 @@ $(document).ready(function() {
     });
 });
 
+document.querySelector('.catalog-menu').onclick = (elem) =>document.querySelector('.catalog-filter-wrapper').classList.toggle('active');
+
+document.querySelector('.catalog-filter-header-cross').onclick = (elem) =>document.querySelector('.catalog-filter-wrapper').classList.toggle('active')
