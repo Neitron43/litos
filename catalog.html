@@ -18,8 +18,8 @@
                     <div class="header-burger">
                         <span></span>
                     </div>
-                    <div class="header-middle-logo-mobile"><img src="./img/litos-logo-mobile.svg"></div>
-                    <div class="header-middle-search-form-mobile"><img src="./img/search-mobile.png"></div>
+                    <div class="header-middle-logo-mobile"><img src="./img/litos-logo-mobile.svg" alt="Компания Литос декоративный камень"></div>
+                    <div class="header-middle-search-form-mobile"><img src="./img/search-mobile.png" alt="Кнопка поиска"></div>
                     <div class="header-upper-menu">
                         <h3 class="header-upper-mobile-head _first">Меню</h3>
                         <div class="header-upper-nav">
@@ -27,7 +27,7 @@
                                 <li>О нас</li>
                                 <li>Акции</li>
                                 <li>Оплата</li>
-                                <li>Доставка</li>
+                            <li>Доставка</li>
                                 <li>Гарантии и возврат</li>
                             </ul>
                         </div>
@@ -43,13 +43,13 @@
         <div class="header-mid">
             <div class="wrapper">
                 <div class="header-middle">
-                    <div class="header-middle-logo"><img src="./img/litos-logo.svg"></div>
+                    <div class="header-middle-logo"><img src="./img/litos-logo.svg" alt="Компания Литос декоративный камень"></div>
                     <form class="header-middle-search-form">
                         <input class="search" type="text" placeholder="Найдите всё что вы хотите в нашем магазине!" autocomplete="off">
-                        <button><img src="./img/magnifying-glass.svg"></button>
+                        <button><img src="./img/magnifying-glass.svg" alt="Кнопка поиска"></button>
                     </form>
                     <div class="header-middle-bag">
-                        <button><img src="./img/shopping-cart.svg"></button>
+                        <button><img src="./img/shopping-cart.svg" alt="Корзина"></button>
                         <p>в корзине нет товаров</p>
                     </div>
                 </div>
@@ -58,7 +58,8 @@
         <div class="header-down">
             <div class="wrapper">
                 <div class="header-bottom">
-                    <button class="header-bottom-button"><img src="./img/header-catalog.svg"></button>
+                    <button class="header-bottom-button"><img src="./img/header-catalog.svg" alt="Каталог товаров"></button>
+                    <button class="header-bottom-button-mobile"><img src="./img/catalog-mobile.svg" alt="Каталог товаров"></button>
                     <div class="header-bottom-popular">
                         <ul>
                             <li><a target="_blank" href="https://youtu.be/FiHeDhisao8?t=13">Популярная категория</a></li>
@@ -136,64 +137,74 @@
         </div>
     </section>
     <section class="catalog-mid">
-        <div class="wrapper">
+        <div class="wrapper">   
             <div class="catalog-middle">
-                <div class="catalog-filter">
-                    <div class="catalog-filter-category">
-                        <h3 class="header-min">Категория</h3>
-                        <label class="check option">
-                            <input class="check__input" type="checkbox">
-                            <span class="check__box"></span>
-                            <p>Какая-то категория товаров</p>
-                        </label>
-                        <label class="check">
-                            <input class="check__input" type="checkbox">
-                            <span class="check__box"></span>
-                            <p>Какая-то категория товаров</p>
-                        </label>
-                        <label class="check">
-                            <input class="check__input" type="checkbox">
-                            <span class="check__box"></span>
-                            <p>Какая-то категория товаров</p>
-                        </label>
-                        <label class="check">
-                            <input class="check__input" type="checkbox">
-                            <span class="check__box"></span>
-                            <p>Какая-то категория товаров</p>
-                        </label>
-                    </div>
-                    <div class="catalog-filter-price">
-                        <h3 class="header-min">Цена</h3>
-                        <div class="catalog-filter-price-inputs">
-                            <input id="first" placeholder="От 100">
-                            <img src="./img/filter-hr.svg">
-                            <input id="second" placeholder="До 101">
+                <div class="catalog-menu">
+                    <img src="./img/filter.png">
+                    <span>Фильтр товаров</span>
+                </div>
+                <div class="catalog-filter-wrapper">
+                    <div class="catalog-filter">
+                        <div class="catalog-filter-header-mobile">
+                            <h2 class="header-mid">Фильтр</h2>
+                            <img class="catalog-filter-header-cross" src="./img/cross.png">
                         </div>
+                        <div class="catalog-filter-category">
+                            <h3 class="header-min">Категория</h3>
+                            <label class="check option">
+                                <input class="check__input" type="checkbox">
+                                <span class="check__box"></span>
+                                <p>Какая-то категория товаров</p>
+                            </label>
+                            <label class="check">
+                                <input class="check__input" type="checkbox">
+                                <span class="check__box"></span>
+                                <p>Какая-то категория товаров</p>
+                            </label>
+                            <label class="check">
+                                <input class="check__input" type="checkbox">
+                                <span class="check__box"></span>
+                                <p>Какая-то категория товаров</p>
+                            </label>
+                            <label class="check">
+                                <input class="check__input" type="checkbox">
+                                <span class="check__box"></span>
+                                <p>Какая-то категория товаров</p>
+                            </label>
+                        </div>
+                        <div class="catalog-filter-price">
+                            <h3 class="header-min">Цена</h3>
+                            <div class="catalog-filter-price-inputs">
+                                <input id="first" placeholder="От 100">
+                                <img src="./img/filter-hr.svg">
+                                <input id="second" placeholder="До 101">
+                            </div>
+                        </div>
+                        <div class="catalog-filter-colours">
+                            <h3 class="header-min">Цвета</h3>
+                            <label class="check option">
+                                <input class="check__input" type="checkbox">
+                                <span class="check__box"></span>
+                                <p>Белый</p>
+                            </label>
+                            <label class="check">
+                                <input class="check__input" type="checkbox">
+                                <span class="check__box"></span>
+                                <p>Коричневый</p>
+                            </label>
+                            <label class="check">
+                                <input class="check__input" type="checkbox">
+                                <span class="check__box"></span>
+                                <p>Черный</p>
+                            </label>
+                            <label class="check">
+                                <input class="check__input" type="checkbox">
+                                <span class="check__box"></span>
+                                <p>Красный</p>
+                            </label>
+                        </div>
+                        <button>Обновить</button>
                     </div>
-                    <div class="catalog-filter-colours">
-                        <h3 class="header-min">Цвета</h3>
-                        <label class="check option">
-                            <input class="check__input" type="checkbox">
-                            <span class="check__box"></span>
-                            <p>Белый</p>
-                        </label>
-                        <label class="check">
-                            <input class="check__input" type="checkbox">
-                            <span class="check__box"></span>
-                            <p>Коричневый</p>
-                        </label>
-                        <label class="check">
-                            <input class="check__input" type="checkbox">
-                            <span class="check__box"></span>
-                            <p>Черный</p>
-                        </label>
-                        <label class="check">
-                            <input class="check__input" type="checkbox">
-                            <span class="check__box"></span>
-                            <p>Красный</p>
-                        </label>
-                    </div>
-                    <button>Обновить</button>
                 </div>
                 <div class="catalog-cards">
                     <div class="good">

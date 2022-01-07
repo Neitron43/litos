@@ -130,7 +130,7 @@ body {
     justify-content:space-around;
 }
 
-.header-mid {
+.header-middle {
     margin-top: 25px;
 }
 
@@ -518,31 +518,31 @@ body {
 }
 
 @media (max-width:1280px){
-    .popular-products-cards {
+    .popular-products-cards{
         zoom: 1.3;
         grid-template-columns: 280px 280px 280px;
     }
 }
 @media (max-width:1240px){
-    .popular-products-cards {
+    .popular-products-cards{
         zoom: 1.2;
     }
 }
 @media (max-width:1160px){
-    .popular-products-cards {
+    .popular-products-cards{
         zoom: 1.1;
     }
 }
 
 @media (max-width:1085px){
-    .popular-products-cards {
+    .popular-products-cards{
         zoom: 1.0;
     }
 }
 
 @media (max-width:1085px){
     .popular-products-cards{
-        grid-template-columns: 45% 45%;
+        grid-template-columns: 45% 45% !important;
     }
 }
 
@@ -689,7 +689,9 @@ input#second {
     .header-middle-logo-mobile,
     .header-upper-mobile-head,
     .header-bottom-button-mobile,
-    .categories-main-card-img-2 {
+    .categories-main-card-img-2,
+    .catalog-menu,
+    .catalog-filter-header-mobile {
         display: none;
     }
 }
@@ -711,13 +713,25 @@ input#second {
         margin: 0 20px
     }
     header{
-        margin-top: 20px;
+        padding-top: 20px;
+        position: fixed;
+        width: 100%;
+        height: 9%;
+        top: 0;
+        background-color: #FFFFFF;
     }
     .header-up{
         background: none;
+        padding: 0;
+    }
+    .header-up{
+        z-index: 200;
+    }
+    .header-upper{
+        position: relative;
     }
     .header-burger {
-        z-index: 16;
+        z-index: 260;
         display: block;
         position: relative;
         width: 40px;
@@ -767,7 +781,7 @@ input#second {
         padding-top: 100px;
         padding-left: 20px;
         font-size: 22px;
-        z-index: 15;
+        z-index: 250;
         position: fixed;
         top: -100%;
         left: 0;
@@ -815,8 +829,8 @@ input#second {
     }
     .header-middle-search-form-mobile{
         position: absolute;
-        top: 27px;
-        right: 30px;
+        top: 0px;
+        right: 0px;
     }
 
     .header-middle-bag button{
@@ -836,23 +850,27 @@ input#second {
     .header-bottom-button{
         display: none;
     }
-    .header-bottom button{
+    .header-bottom-button-mobile{
         position: fixed;
-        z-index: 13;
         bottom: 4%;
         width: 200px;
         height: 70px;
-        background: #FFFFFF;
+        background-color: #FFFFFF;
         box-shadow: 0px 0px 30px rgba(153, 153, 153, 0.25);
         border-radius: 1000px;
         
     }
+    .cards-mobile{
+        margin-top: 90px;
+    }
     .cards-mobile-card {
+        z-index: -10;
         position: relative;
         display: flex;
         margin-left: 20px;
         justify-content: space-between;
         margin-bottom: 20px;
+        background: #FCFCFC;
     }
     .cards-mobile-card-img{
         margin-top: -15px;
@@ -948,6 +966,74 @@ input#second {
     }
     footer{
         padding-bottom: 100px;
+    }
+    .catalog-menu {
+        display: flex;
+        align-items: center;
+        position: relative;
+        height: 30px;
+    }
+    .catalog-menu span{
+        position: relative;
+        padding-left: 15px;
+        z-index: -1;
+    }
+    .catalog-menu img{
+        position: relative;
+        z-index: -1000;
+    }
+    .catalog-filter-wrapper{
+        display: none;
+    }
+    .catalog-filter-wrapper.active {
+        display: block;
+        padding-top: 200px;
+        width: 100%;
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        overflow-y: scroll;
+    }
+    .catalog-filter {
+        box-shadow: 0px 0px 30px rgba(153, 153, 153, 0.25);
+        border-radius: 20px 20px 0px 0px;
+        zoom: 1;
+        position: absolute;
+        top: 40%;
+        left: 0;
+        padding-top: 100px;
+        z-index: 20;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        background-color: #FFFFFF;
+    }
+    .catalog-filter-header-mobile{
+        display: flex;
+        position: relative;
+        align-items: center;
+        margin-top: -80px;
+        padding-bottom: 40px;
+        justify-content: center;
+    }
+    .catalog-filter-header-mobile h2{
+        font-weight: 500;
+    }
+    .catalog-filter-header-mobile img {
+        width: 30px;
+        position: absolute;
+        height: 30px;
+        right: 10px;
+    }
+    .catalog-cards{
+        grid-template-columns: 48% 48% !important;
+
+    }
+    .catalog-middle {
+        grid-template-rows: 3% 90% !important;
+        grid-template-columns: none;
     }
 }
 @media (max-width:970px) {
