@@ -1,0 +1,182 @@
+/*Обнуление ваще в нулину под все браузеры чтобы работало чётко*/
+*{padding: 0;margin: 0;border: 0;}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat';	
+    background-color: white;
+}
+
+:root {
+    /* Colors */
+    --pr-color: #909090;
+    --header-color: #202020;
+    --accent: #9F5830;
+    --accent-active: #7e421f;
+    --accent-hover: #913b0a;
+
+    --pr-font-base: 600;
+    --header-font-base: 600;
+
+    /* Font Sizes */
+        /* Paragrath */
+        --pr-min: 14px;
+        --pr-mid: 16px;
+        --pr-large: 18px;
+
+        /* Headers */
+        --header-min: 24px;
+        --header-mid: 36px;
+        --header-large: 42px;
+    /* Border Radius */
+    --border-rad: 10000px;
+}
+
+/* paragraths */
+.pr-min {
+    font: var(--pr-font-base);
+    font-size: var(--pr-min);
+    color: var(--pr-color);
+}
+
+.pr-mid {
+    font: var(--pr-font-base);
+    font-size: var(--pr-mid);
+    color: var(--pr-color);
+}
+
+.pr-large {
+    font: var(--pr-font-base);
+    font-size: var(--pr-large);
+    color: var(--pr-color);
+}
+
+
+/* headers */
+.header-min {
+    font: var(--header-font-base);
+    font-size: var(--header-min);
+}
+
+.header-mid {
+    font: var(--header-font-base);
+    font-size: var(--header-mid);
+}
+
+.header-large {
+    font: var(--header-font-base);
+    font-size: var(--header-large);
+}
+
+
+
+.wrapper {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+/*Product Page*/
+
+.product {
+    margin-top: 60px;
+}
+
+.product-card {
+    display: flex;
+}
+
+.product-card-info-text h1{
+    margin-bottom: 20px;
+    max-width: 590px;
+    font-weight: 500;
+}
+
+.product-price-permeter{
+    font-weight: 500;    
+}
+
+.product-card-info-text {
+    margin-left: 40px;
+}
+
+.product-card-info-text span{
+    color: var(--accent);
+}
+
+.product-card-info-img {
+    padding: 90px;
+    background: #FFFFFF;
+    border: 1px solid #EDEDED;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.product-card-info-text-description {
+    padding-top: 20px;
+    max-width: 490px;
+}
+
+.product-card-info-text-input{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.product-card-info-text-input input{
+    width: 50px;
+    height: 50px;
+    background: #FFFFFF;
+    /* Параграф */
+    
+    border: 1px solid #909090;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-right: 13px;
+    padding: 18px;
+    font-size: 18px;
+}
+
+.product-card-info-text-input p {
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--accent);
+}
+
+.product-card-info-text-price {
+    font-weight: 500;
+}
+
+.product-card-info-text button{
+    width: 283px;
+    height: 60px;
+    background: #9F5830;
+    border-radius: 10000px;
+    color: #FCFCFC;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
